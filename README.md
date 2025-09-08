@@ -38,18 +38,16 @@ This tutorial provides step-by-step instructions for:
 
 
    ```bash
-   chmod +x scripts/install_environment.sh
-   ./scripts/install_environment.sh
+   # Install the course environment (one command)
+   bash scripts/install_environment.sh
 
-   # modern, stable solver (recommended)
-   conda install -n base -c conda-forge -y conda-libmamba-solver
-   conda config --set solver libmamba
+   ## What this does:
 
-   # channels: conda-forge + bioconda only
-   conda config --remove-key channels 2>/dev/null || true
-   conda config --add channels conda-forge
-   conda config --add channels bioconda
-   conda config --set channel_priority strict
+   ## Creates a Conda env named bio559r using conda-forge/bioconda
+
+   ## Registers Python (bio559r) and R kernels for Jupyter
+
+   ## Sets up R cleanly so Python↔R works
    ```
 
 4. **Test your installation:**
