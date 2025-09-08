@@ -31,7 +31,7 @@ This tutorial provides step-by-step instructions for:
 1. **Clone this repository:**
    ```bash
    git clone https://github.com/manarai/byu-gbc-bio559r-course
-   cd BIO559R-Tutorial
+   cd byu-gbc-bio559r-course
    ```
 
 2. **Run the installation script:**
