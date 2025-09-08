@@ -30,7 +30,7 @@ This tutorial provides step-by-step instructions for:
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/your-username/BIO559R-Tutorial.git
+   git clone https://github.com/manarai/BIO559R-Tutorial.git
    cd BIO559R-Tutorial
    ```
 
