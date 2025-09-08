@@ -35,6 +35,12 @@ This tutorial provides step-by-step instructions for:
    ```
 
 2. **Run the installation script:**
+
+
+   ```bash
+   chmod +x scripts/install_environment.sh
+   ./scripts/install_environment.sh
+
    # modern, stable solver (recommended)
    conda install -n base -c conda-forge -y conda-libmamba-solver
    conda config --set solver libmamba
@@ -44,10 +50,6 @@ This tutorial provides step-by-step instructions for:
    conda config --add channels conda-forge
    conda config --add channels bioconda
    conda config --set channel_priority strict
-
-   ```bash
-   chmod +x scripts/install_environment.sh
-   ./scripts/install_environment.sh
    ```
 
 4. **Test your installation:**
