@@ -35,6 +35,5 @@ dependencies:
   - r-essentials
   - r-tidyverse
   - r-data.table
-  - r-matrix
-  - #r-seurat          # available on conda-forge for arm64
+  - r-matrix  
   - r-reticulate
