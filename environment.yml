@@ -2,83 +2,39 @@ name: bio559r
 channels:
   - conda-forge
   - bioconda
-  - defaults
+channel_priority: strict
 dependencies:
-  - python=3.9
+  # Core
+  - python=3.11
   - pip
-  # Core scientific computing packages
+  - jupyterlab
+  - ipykernel
+
+  # scRNA / spatial (Python)
+  - scanpy>=1.9
+  - anndata
   - numpy
   - pandas
-  - scipy
   - matplotlib
-  - seaborn
-  - jupyter
-  - ipykernel
-  
-  # Single-cell analysis packages (Python)
-  - scanpy
-  - anndata
-  - #scverse
-  - #squidpy
-  - #cellrank
-  - scvelo
-  - palantir
-  
-  # R and R packages
-  - r-base=4.4
-  - r-essentials
-  - r-irkernel
-  - #r-seurat
-  - r-ggplot2
-  - r-dplyr
-  - r-tidyr
-  - r-readr
-  - r-stringr
-  - r-forcats
-  - r-purrr
-  - r-tibble
-  - r-devtools
-  - r-biocmanager
-  - r-rmarkdown
-  - r-knitr
-  
-  # Python-R interface
-  - rpy2
-  
-  # Additional bioinformatics tools
-  - bioconductor-biobase
-  - bioconductor-biocgenerics
-  - bioconductor-s4vectors
-  
-  # Visualization and plotting
-  - plotly
-  - #bokeh
-  - #altair
-  
-  # Data handling
-  - h5py
-  - tables
-  - xlrd
-  - openpyxl
-  
-  # Machine learning
   - scikit-learn
-  - umap-learn
-  
-  # Statistical packages
   - statsmodels
-  - pingouin
-  
-  # Additional utilities
-  - tqdm
-  - joblib
+  - h5py
   - numba
-  
-  # Pip packages (if needed)
+  - pynndescent
+  - leidenalg
+  - python-igraph
+  - louvain
+  - session-info
   - pip:
-    - leidenalg
-    - #fa2
-    - harmonypy
-    - scrublet
-    - #doubletdetection
+      - squidpy        # spatial transcriptomics
+      - scvelo         # RNA velocity
 
+  # R + Jupyter kernel
+  - r-base=4.4
+  - r-irkernel
+  - r-essentials
+  - r-tidyverse
+  - r-data.table
+  - r-matrix
+  - #r-seurat          # available on conda-forge for arm64
+  - r-reticulate
