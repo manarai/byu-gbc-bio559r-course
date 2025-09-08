@@ -77,7 +77,7 @@ dependencies:
   # Pip packages (if needed)
   - pip:
     - leidenalg
-    - fa2
+    - #fa2
     - harmonypy
     - scrublet
     - doubletdetection
