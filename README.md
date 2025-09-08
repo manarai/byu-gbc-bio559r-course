@@ -57,6 +57,7 @@ This tutorial provides step-by-step instructions for:
    # create env (using your environment.yml)
    conda env create -f environment.yml
    conda activate bio559r
+   mamba install -c conda-forge rpy2=3.5.11 
    python scripts/test_installation.py
    ```
 
