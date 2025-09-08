@@ -18,14 +18,14 @@ dependencies:
   # Single-cell analysis packages (Python)
   - scanpy
   - anndata
-  - scverse
-  - squidpy
-  - cellrank
+  - #scverse
+  - #squidpy
+  - #cellrank
   - scvelo
   - palantir
   
   # R and R packages
-  - r-base=4.3
+  - r-base=4.4
   - r-essentials
   - r-irkernel
   - #r-seurat
@@ -52,8 +52,8 @@ dependencies:
   
   # Visualization and plotting
   - plotly
-  - bokeh
-  - altair
+  - #bokeh
+  - #altair
   
   # Data handling
   - h5py
