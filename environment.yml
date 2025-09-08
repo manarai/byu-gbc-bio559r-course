@@ -1,0 +1,41 @@
+name: bio559r
+channels:
+  - conda-forge
+  - bioconda
+channel_priority: strict
+dependencies:
+  # Core
+  - python=3.11
+  - pip
+  - jupyterlab
+  - ipykernel
+
+  # Python single-cell + spatial
+  - scanpy>=1.9
+  - anndata
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - statsmodels
+  - h5py
+  - numba
+  - pynndescent
+  - python-igraph
+  - leidenalg
+  - louvain
+  - session-info
+  - pip:
+      - squidpy
+      - scvelo
+
+  # R + kernel + common tidy stack
+  - r-base=4.4
+  - r-irkernel
+  - r-essentials
+  - r-tidyverse
+  - r-data.table
+  - r-matrix
+  - r-reticulate
+
