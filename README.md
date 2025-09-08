@@ -35,18 +35,30 @@ This tutorial provides step-by-step instructions for:
    ```
 
 2. **Run the installation script:**
+   # modern, stable solver (recommended)
+   conda install -n base -c conda-forge -y conda-libmamba-solver
+   conda config --set solver libmamba
+
+   # channels: conda-forge + bioconda only
+   conda config --remove-key channels 2>/dev/null || true
+   conda config --add channels conda-forge
+   conda config --add channels bioconda
+   conda config --set channel_priority strict
+
    ```bash
    chmod +x scripts/install_environment.sh
    ./scripts/install_environment.sh
    ```
 
-3. **Test your installation:**
+4. **Test your installation:**
    ```bash
+   # create env (using your environment.yml)
+   conda env create -f environment.yml
    conda activate bio559r
    python scripts/test_installation.py
    ```
 
-4. **Start Jupyter notebook:**
+5. **Start Jupyter notebook:**
    ```bash
    jupyter notebook
    ```
