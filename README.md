@@ -41,21 +41,26 @@ This tutorial provides step-by-step instructions for:
    # Install the course environment (one command)
    bash scripts/install_environment.sh
 
-   ## What this does: Creates a Conda env named bio559r using conda-forge/bioconda. Registers Python (bio559r) and R kernels for Jupyter. Sets up R cleanly so Python↔R works
+   # What this does: Creates a Conda env named bio559r using conda-forge/bioconda.
+   # Registers Python (bio559r) and R kernels for Jupyter. Sets up R cleanly so Python↔R works
    ```
 
-4. **Test your installation:**
+4. ** Install rpy2 magic:**
    ```bash
-   # create env (using your environment.yml)
-   conda env create -f environment.yml
+   # activate conda environment
    conda activate bio559r
-   mamba install -c conda-forge rpy2=3.5.11 
-   python scripts/test_installation.py
+   # install inside env
+   export R_HOME="$(R RHOME | tail -n 1)" # for rpy2 to use the R version within conda env
+   pip install "rpy2==3.5.11"
+
    ```
 
-5. **Start Jupyter notebook:**
+5. **Start Jupyter lab:**
    ```bash
-   jupyter notebook
+   jupyter lab
+   # If Jupyter shows a token link, click it (or paste it into your browser).
+   # To set a password for next time: jupyter notebook password.
+
    ```
 
 ### Option 2: Manual Installation
