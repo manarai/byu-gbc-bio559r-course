@@ -1,0 +1,84 @@
+name: bio559r
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  # Core scientific computing packages
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - jupyter
+  - ipykernel
+  
+  # Single-cell analysis packages (Python)
+  - scanpy
+  - anndata
+  - scverse
+  - squidpy
+  - cellrank
+  - scvelo
+  - palantir
+  
+  # R and R packages
+  - r-base=4.3
+  - r-essentials
+  - r-irkernel
+  - r-seurat
+  - r-ggplot2
+  - r-dplyr
+  - r-tidyr
+  - r-readr
+  - r-stringr
+  - r-forcats
+  - r-purrr
+  - r-tibble
+  - r-devtools
+  - r-biocmanager
+  - r-rmarkdown
+  - r-knitr
+  
+  # Python-R interface
+  - rpy2
+  
+  # Additional bioinformatics tools
+  - bioconductor-biobase
+  - bioconductor-biocgenerics
+  - bioconductor-s4vectors
+  
+  # Visualization and plotting
+  - plotly
+  - bokeh
+  - altair
+  
+  # Data handling
+  - h5py
+  - tables
+  - xlrd
+  - openpyxl
+  
+  # Machine learning
+  - scikit-learn
+  - umap-learn
+  
+  # Statistical packages
+  - statsmodels
+  - pingouin
+  
+  # Additional utilities
+  - tqdm
+  - joblib
+  - numba
+  
+  # Pip packages (if needed)
+  - pip:
+    - leidenalg
+    - fa2
+    - harmonypy
+    - scrublet
+    - doubletdetection
+
