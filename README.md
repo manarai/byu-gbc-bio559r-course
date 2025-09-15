@@ -39,7 +39,8 @@ This tutorial provides step-by-step instructions for:
 
    ```bash
    # Install the course environment (one command)
-   bash scripts/install_environment.sh
+   bash scripts/install_environment.sh # For linux and macsOS
+   sed -i 's/\r$//' install_environment.sh # If you are running the bash script on WSL instead of PowerShell,
 
    # What this does: Creates a Conda env named bio559r using conda-forge/bioconda.
    # Registers Python (bio559r) and R kernels for Jupyter. Sets up R cleanly so Python↔R works
