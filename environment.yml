@@ -38,4 +38,6 @@ dependencies:
   - r-data.table
   - r-matrix
   - r-reticulate
+  - r-ggplot2        # added explicitly
+  - r-dplyr          # added explicitly
 
