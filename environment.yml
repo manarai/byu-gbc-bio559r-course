@@ -3,8 +3,9 @@ channels:
   - conda-forge
   - bioconda
 channel_priority: strict
+
 dependencies:
-  # Core
+  # Core Python
   - python=3.11
   - pip
   - jupyterlab
@@ -30,14 +31,15 @@ dependencies:
       - squidpy
       - scvelo
 
-  # R + kernel + common tidy stack
+  # R stack
   - r-base=4.4
   - r-irkernel
-  - r-essentials
-  - r-tidyverse
+  - r-essentials        # metapackage (includes R + Jupyter integration)
+  - r-tidyverse         # pulls ggplot2 + dplyr + readr + tidyr + etc.
   - r-data.table
   - r-matrix
   - r-reticulate
-  - r-ggplot2        # added explicitly
-  - r-dplyr          # added explicitly
 
+  # Explicitly list ggplot2 & dplyr to make it obvious
+  - r-ggplot2
+  - r-dplyr
