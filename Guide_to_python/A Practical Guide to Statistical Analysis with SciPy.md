@@ -2,7 +2,7 @@
 
 # A Practical Guide to Statistical Analysis with SciPy
 
-*A tutorial for undergraduates on performing statistical tests in Python, brought to you by Manus.*
+*A tutorial for undergraduates on performing statistical tests in Python, created by T W.Terooatea
 
 ## Introduction
 
