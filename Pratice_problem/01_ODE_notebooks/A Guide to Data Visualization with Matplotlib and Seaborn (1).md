@@ -2,7 +2,7 @@
 
 # A Guide to Data Visualization with Matplotlib and Seaborn
 
-*A tutorial for undergraduates on creating and customizing plots in Python, brought to you by T W. Terooatea.*
+*A tutorial for undergraduates on creating and customizing plots in Python,created by T W. Terooatea.*
 
 ## Introduction
 
