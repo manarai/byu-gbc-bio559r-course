@@ -1,6 +1,6 @@
 # A Beginner's Guide to Metabolic Flux Analysis in Python
 
-**Author:** Manus AI
+**Author:** Tommy W. Terooatea
 
 **Date:** September 29, 2025
 
